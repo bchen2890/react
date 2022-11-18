@@ -1,0 +1,44 @@
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    background-color: #282c34;
+  }
+  
+  .list-item-name {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  
+  .list-item h2 {
+    color: #3a3a3a;
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: white;
+  }
+  
+  .list-item-price {
+    font-weight: bold;
+    color: white;
+    background-color: #20B2AA;
+    padding: 1rem;
+    border-left: 1px groove #008B8B;
+  }
+
+  .list-item-date {
+    font-size: 1rem;
+    color: white;
+    background-color: #008B8B;
+    border-right: 1px groove #027676;
+    padding: 1rem;
+  }
+
+  
