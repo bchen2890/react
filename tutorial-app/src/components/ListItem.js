@@ -1,10 +1,10 @@
 import './ListItem.css'
 
-function ListItem (date, name, price) {
+function ListItem (props) {
     return <div className='list-item'>
-        <div className='list-item-date'>{date}</div>
-        <h2  className='list-item-name'>{name}</h2>
-        <div className='list-item-price'>{price}</div>
+        <div className='list-item-date'>{props.date.toLocaleDateString()}</div>
+        <h2  className='list-item-name'>{props.name}</h2>
+        <div className='list-item-price'>{props.price}</div>
     </div>
 }
 
