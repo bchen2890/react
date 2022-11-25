@@ -5,6 +5,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     margin: 1rem;
     background-color: #282c34;
+    border-radius: 15px;
   }
   
   .list-item-name {
@@ -32,6 +33,8 @@
     padding: 1rem;
     border-left: 1px groove #008B8B;
     min-width: 25px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 
   .list-item-date {
@@ -40,6 +43,9 @@
     background-color: #008B8B;
     border-right: 1px groove #027676;
     padding: 1rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    min-width: 80px;
   }
 
   

@@ -1,0 +1,7 @@
+.list {
+  flex: content;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+  

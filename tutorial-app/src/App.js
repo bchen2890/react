@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import ListItem from './components/ListItem';
+import List from './components/List';
+import Card from './components/Card';
 
 function App() {
   const list = [
@@ -8,19 +8,21 @@ function App() {
       date: new Date(2022, 11, 22), name: "Potato", price: 1.2
     },
     {
-      date: new Date(2022, 11, 22), name: "Oranges", price: 1.9
+      date: new Date(2022, 11, 2), name: "Oranges", price: 1.9
     },
     {
-      date: new Date(2022, 11, 22), name: "Tofu", price: 2.5
+      date: new Date(2022, 11, 12), name: "Tofu", price: 2.5
     },
     {
-      date: new Date(2022, 11, 22), name: "Cheese", price: 3
+      date: new Date(2022, 11, 5), name: "Cheese", price: 3
     }
   ];
 
   return (
     <div className="App">
-      {list.map(i=> <ListItem date={i.date} name={i.name} price={i.price}/>)}
+      <Card className="border">
+        <List items={list}/>
+      </Card>
     </div>
   );
 }
