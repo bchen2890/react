@@ -1,6 +1,7 @@
 import './App.css';
-import List from './components/List';
-import Card from './components/Card';
+import List from './components/List/List';
+import NewItem from './components/NewItem/NewItem';
+import Card from './components/UI/Card';
 
 function App() {
   const list = [
@@ -20,6 +21,9 @@ function App() {
 
   return (
     <div className="App">
+      <Card className="border">
+        <NewItem></NewItem>
+      </Card>
       <Card className="border">
         <List items={list}/>
       </Card>
