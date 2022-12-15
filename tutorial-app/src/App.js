@@ -18,11 +18,13 @@ function App() {
       date: new Date(2022, 11, 5), name: "Cheese", price: 3
     }
   ];
-
+  const addItem = item => {
+    console.log(item);
+  };
   return (
     <div className="App">
       <Card className="border">
-        <NewItem></NewItem>
+        <NewItem addItem={addItem}></NewItem>
       </Card>
       <Card className="border">
         <List items={list}/>

@@ -1,9 +1,9 @@
 import ItemForm from './ItemForm';
 import './NewItem.css';
 
-const NewItem = () => {
+const NewItem = (props) => {
     return <div className='new-item'>
-        <ItemForm></ItemForm>
+        <ItemForm addItem={props.addItem}></ItemForm>
     </div>
 }
 
