@@ -24,3 +24,14 @@
 .new-item__actions {
   text-align: right;
 }
+
+.new-item button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid #008B8B;
+  background-color: #025f5f;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
+}

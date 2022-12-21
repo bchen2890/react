@@ -19,7 +19,7 @@ const ItemForm = (props) => {
     const data = {
       name: name,
       price: price,
-      date: date
+      date: new Date(date)
     };
     props.addItem(data);
     setName('');
@@ -38,10 +38,11 @@ const ItemForm = (props) => {
         </div>
         <div className='new-item__control'>
           <label>Date</label>
-          <input type='date' min='2019-01-01' max='2022-12-31' value={date} onChange={dateOnChange} />
+          <input type='date' min='2019-01-01' max='2023-12-31' value={date} onChange={dateOnChange} />
         </div>
       </div>
       <div className='new-item__actions'>
+        <button onClick={props.onClose}>Close</button>
         <button type='submit'>Add item</button>
       </div>
     </form>
