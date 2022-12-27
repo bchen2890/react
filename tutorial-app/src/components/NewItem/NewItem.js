@@ -5,10 +5,10 @@ import './NewItem.css';
 const NewItem = (props) => {
     const [open, setOpen] = useState(false);
 
-    return <div className='new-item'>
-        {open?<ItemForm addItem={props.addItem} onClose={()=>setOpen(false)}></ItemForm>:
+    return <div className={open?'new-item':'new-item close'}>
+        {open?
+        <ItemForm addItem={props.addItem} onClose={()=>setOpen(false)}></ItemForm>:
         <button onClick={()=>setOpen(true)}>Add Item</button>}
-        
     </div>
 }
 

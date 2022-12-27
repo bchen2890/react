@@ -2,14 +2,15 @@ import  ListItem from "./ListItem"
 import './List.css';
 import ListFilter from "./ListFilter";
 import { useState } from "react";
+import ListChart from "./ListChart";
 
 function List({ items }) {
   const [filteredYear, setFilteredYear] = useState('2022');
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
-  const filteredExpenses = items.filter((expense) => {
-    return expense.date.getFullYear().toString() === filteredYear;
+  const filteredItems = items.filter((item) => {
+    return item.date.getFullYear().toString() === filteredYear;
   });
 
   return (
@@ -18,7 +19,8 @@ function List({ items }) {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {filteredExpenses.map(i=> <ListItem date={i.date} name={i.name} price={i.price}/>)}
+        <ListChart items={filteredItems} />
+        {filteredItems.map(i=> <ListItem date={i.date} name={i.name} price={i.price}/>)}
 	</div>
   )
 }

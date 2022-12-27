@@ -8,8 +8,8 @@ const ListFilter = (props) => {
   };
 
   return (
-    <div className='expenses-filter'>
-      <div className='expenses-filter__control'>
+    <div className='items-filter'>
+      <div className='items-filter__control'>
         <label>Filter by year</label>
         <select value={props.selected} onChange={changeFilter}>
             <option value='2023'>2023</option>

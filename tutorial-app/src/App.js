@@ -6,16 +6,25 @@ import Card from './components/UI/Card';
 
 const DUMMY_ITEMS = [
   {
-    date: new Date(2022, 11, 22), name: "Potato", price: 1.2
+    date: new Date(2022, 10, 22), name: "Potato", price: 1.2
   },
   {
-    date: new Date(2022, 11, 2), name: "Oranges", price: 1.9
+    date: new Date(2022, 9, 2), name: "Oranges", price: 1.9
   },
   {
-    date: new Date(2022, 11, 12), name: "Tofu", price: 2.5
+    date: new Date(2022, 1, 12), name: "Tofu", price: 2.5
   },
   {
-    date: new Date(2022, 11, 5), name: "Cheese", price: 3
+    date: new Date(2022, 3, 5), name: "Cheese", price: 3
+  },
+  {
+    date: new Date(2022, 4, 5), name: "Egg", price: 2
+  },
+  {
+    date: new Date(2022, 7, 5), name: "Donu", price: 3
+  },
+  {
+    date: new Date(2022, 6, 5), name: "Baguette", price: 1
   }
 ];
 
